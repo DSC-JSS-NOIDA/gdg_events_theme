@@ -1,5 +1,4 @@
-     
-     <script>
+    <script>
      new WOW().init();
     </script>
     <div class="bg">
@@ -133,53 +132,27 @@
           </div>
         </div>
       </div>
-      <div id="services" class="services">
+      
+  <div id="services" class="services">
         <div class="container">
           <div class="service-head text-center">
             <h2>Upcoming Events</h2>
             <span> </span>
-          </div>
-          <!--- services-grids 
-          <div class="services-grids text-center">
-            <div class="col-md-4">
-              <div class="service-grid wow bounceIn" data-wow-delay="0.4s">
-                <span class="service-icon1"> </span>
-                <h3><a href="#">Beautiful Designs</a></h3>
-                <p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="service-grid wow bounceIn" data-wow-delay="0.4s">
-                <span class="service-icon2"> </span>
-                <h3><a href="#">web development</a></h3>
-                <p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
-              </div>
-            <div class="col-md-4">
-              <div class="service-grid wow bounceIn" data-wow-delay="0.4s">
-                <span class="service-icon3"> </span>
-                <h3><a href="#">24/7 Support</a></h3>
-                <p>Proin iaculis purus consequat sem digni ssim. Donec porttitora entum aenean rhoncus posuere odio in.</p>
-              </div>
-            </div>
-            </div> -->
-            
-            
+          </div>  
             <div class="tm-head-grids">
-              <div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
-                <img src="<?php print(get_template_directory_uri()); ?>/gdg_assets/images/upcoming1.jpg" alt="">
-                <h4>Git</h4>
-                <h5>Git is a distributed revision control and source code management (SCM) system with an emphasis on speed, data integrity,and support for distributed, non-linear workflows.</h5>
-              </div>
-              <div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
-                <img src="<?php print(get_template_directory_uri()); ?>/gdg_assets/images/upcoming2.jpg" alt="">
-                <h4>Android</h4>      
-                <h5>Android is a mobile operating system (OS) based on the Linux kernel and currently developed by Google. </h5>
-              </div>
-              <div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
-                <img src="<?php print(get_template_directory_uri()); ?>/gdg_assets/images/upcoming3.jpg" alt="">
-                <h4>Python</h4>
-                <h5>DO you want to Code less and Build more ?? <br> Join the Python Workshop and develop your programming skills !</h5>
-              </div>
+             <?php query_posts('category_name=upcoming-events&showposts=10');
+            if (have_posts()) : while (have_posts()) : the_post(); ?>
+              <a href="<?php the_permalink(); ?>"><div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="">
+                <h4><?php the_title(); ?></h4>
+                <h5><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></h5>
+              </div> </a>
+               <?php endwhile; ?>
+                <?php else : ?>
+                  <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                    <h1>Not Found</h1>
+                  </div>
+                <?php endif; ?>
             </div>
             
             <div class="clearfix"> </div>
@@ -196,16 +169,16 @@
         </div>
 
         <div class="event-time-line">
- 
-           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <?php query_posts('category_name=past-events&showposts=10');
+            if (have_posts()) : while (have_posts()) : the_post(); ?>
             <li>
                <a href="<?php the_permalink(); ?>"><div class="event-image" style="background:url(<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>) no-repeat;background-size: 100% 100%;"></div></a>
               <div class="event-desc wow fadeInLeft" data-wow-delay="0.4s">
                 <h2> <?php the_date(); ?></h2>
                 <h4><p><b><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></b><br><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></p></h4>
               </div>
-          </li><br>
-         
+          </li>
+
           <?php endwhile; ?>
             
 
@@ -217,33 +190,7 @@
           <?php endif; ?>
     
       </div>
-      <div class="about-time-line">
-          <li>
-              <div class="cbp_tmicon1 img2"> </div>
-              <div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
-                <h2>March 6 , 2014 </h2>
-              <h4><p><b>GDG Seminar on Android Game Development .</b><br>A workshop for the "Game Lovers" . Here we taught to build Game using the software "Unity" .</p></h4>
-              </div>
-          </li><br />
-          <li>
-              <div class="cbp_tmicon2 img3"> </div>
-              <div class="cbp_tmlabel wow fadeInLeft" data-wow-delay="0.4s">
-                <h2>November 22 , 2013 </h2>
-                <h4><p><b>All About GSOC.</b><br>Google Summer of Code provides you a platform to showcase your Talent and contribute in Open Source Contribution.</p> </h4>
-              </div>
-          </li>
-          <li>
-              <div class="cbp_tmicon3 img4"> </div>
-              <div class="cbp_tmlabel cbp_tmlabel1 wow fadeInRight" data-wow-delay="0.4s">
-                <h2>January , 2013 </h2>
-                <p><b>Hangout - Android App Devlopment.</b></p>
-              </div>
-          </li>
-          <li>
-              <div class="cbp_tmicon4 img5"> </div>
-          </li>
-          <div class="clearfix"> </div>
-        </div>
+  
         <div class="clearfix"> </div>
         </div>
     </div>
@@ -291,4 +238,3 @@
           </div>
 </p>
          
-

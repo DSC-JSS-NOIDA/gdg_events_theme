@@ -14,4 +14,6 @@
       <?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?>
     </div>
   </div>
+
+  
 </article>
