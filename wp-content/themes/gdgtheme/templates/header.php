@@ -1,51 +1,42 @@
-<?php  
-  $class = 'no-cover';
-  if ( is_front_page() || is_archive() || is_search() || is_home() ) {
-    $class = 'cover';
-  }
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>GDG JSS Noida</title>
+    <!-- <link href="static/css/bootstrap.css" rel='stylesheet' type='text/css' /> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   
+   
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ 
+window.scrollTo(0,1); } </script>
+    </script>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script>
+      $(function() {
+        var pull    = $('#pull');
+          menu    = $('nav ul');
+          menuHeight  = menu.height();
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+        $(window).resize(function(){
+              var w = $(window).width();
+              if(w > 320 && menu.is(':hidden')) {
+                menu.removeAttr('style');
+              }
+          });
+      });
+    </script>
+  </head>
+  <body>
 
-  if ( is_single() ) {
-    $post_thumbnail_url = wp_get_attachment_url( get_post_thumbnail_id( get_the_ID() ) );
-    if ( ! empty($post_thumbnail_url) ) {
-      $class = 'cover';
-      ?>
-      <style>
-        .banner.cover {
-          background-image: url( <?php echo $post_thumbnail_url; ?> );
-        }
-      </style>
-      <?php
-    }
-  }
-?>
-
-<header class="banner <?php echo $class ?>" role="banner">
-  <div class="header-inner">
-      <nav class="nav-main" role="navigation">
-        <div class="container">
-        <?php
-          if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
-          endif;
-        ?>
-        </div>
-      </nav>
-      <?php if( is_front_page() || is_archive() || is_home() ) : ?>
-        <hgroup>
-          <div class="container">
-            <h1 class="page-title">
-              <?php echo dw_timeline_title(); ?>
-            </h1>
-            <h2 class="page-description"><?php bloginfo('description'); ?></h2>
-            <button id="get-started" class="btn btn-default btn-coner"><?php echo dw_timeline_get_theme_option('get_start','Get Start Now') ?></button>
-          </div>
-        </hgroup>
-      <?php elseif( is_search() ) : ?>
-        <div class="container">
-          <h1 class="page-title">
-            <?php echo dw_timeline_title(); ?>
-          </h1>
-        </div>
-      <?php endif; ?>
-  </div>
-</header>
