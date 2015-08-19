@@ -1,6 +1,7 @@
     <script>
      new WOW().init();
     </script>
+  
     <div class="bg">
       <div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
           <div class="top-header">
@@ -8,13 +9,23 @@
             <div class="logo">
               <a href="#"><img src="<?php print(get_template_directory_uri()); ?>/gdg_assets/images/logo.png" title="jss" height=30 width=150 /></a>
             </div>
+
+
+
              <nav class="top-nav"><br>
               <ul class="top-nav">
-                <li><a href="#detail" class="scroll">About Us</a></li>
-                <li><a href="#services" class="scroll">Upcoming Events</a></li>
-                <li><a href="#port" class="scroll">Past Events</a></li>
-              <!--  <li><a href="#team" class="scroll">Team</a></li> -->
-                <li><a href="#contact" class="scroll">Contact</a></li>
+                <?php
+          require_once('lib/wp_bootstrap_navwalker.php');
+              wp_nav_menu( array(
+              'menu'         => 'primary',
+              'theme_location'  => 'primary',
+              'depth'       => 2,
+              'container'     => 'div',
+              'menu_class'    => 'nav navbar-nav',
+              'fallback_cb'   => 'wp_bootstrap_navwalker::fallback',
+              'walker'      => new wp_bootstrap_navwalker())
+            );
+            ?>
               </ul>
               <a href="#" id="pull"><img src="<?php print(get_template_directory_uri()); ?>/gdg_assets/images/menu-icon.png" title="menu" /></a>
             </nav>
@@ -25,7 +36,7 @@
             <div class="banner wow fadeIn" data-wow-delay="0.5s">
         <div class="container">
           <div class="banner-info text-center">
-            <h1>GDG - JSS Noida</h1><br />
+            <a href="index.php/dev-blogs"><h1>GDG - JSS Noida</h1></a><br />
             <span> </span>
             <p>Having a Developer Group would help bring up the IT skillset of students to a newer height ...</p>
           </div>
@@ -194,6 +205,44 @@
         <div class="clearfix"> </div>
         </div>
     </div>
+
+<!--keep in touch-->
+<div class="keep" style="background:url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/keep-banner.jpg) no-repeat 0px 0px;">
+  <div class="container">
+    <h3>Keep in touch with Us</h3>
+    <ul>
+      <li><a href="#"><span class="fb"> </span></a></li>
+      <li><a href="#"><span class="twit"> </span></a></li>
+      <li><a href="#"><span class="google"> </span></a></li>
+      <li><a href="#"><span class="pin"> </span></a></li>
+    </ul>
+    <div class="find">
+      <div class="col-md-4 find-left">
+        <h4>Find Us</h4>
+      </div>
+      <div class="col-md-8 find-right">
+        <div class="adrs">
+          <h5>Address</h5>
+          <p>JSS Academy of Technical Education C-20/1 Sector-62, Noida.</p>
+        </div>
+        <div class="adrs1">
+          <h5>Email Us</h5>
+          <p>hehe@gmail.com</p>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+<!--//keep in touch-->
+<!--map-starts-->
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5230794515874!2d77.3595036!3d28.614081000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce541dc34567f%3A0x4fd027cb23d66b19!2sJSS+Academy+Of+Technical+Education!5e0!3m2!1sen!2sus!4v1439941200258" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <div class="map-mask">
+    
+  </div>
+</div>
+<!--map-end-->
   <!-- testing ends -->
     
     <div id="contact" class="contact">

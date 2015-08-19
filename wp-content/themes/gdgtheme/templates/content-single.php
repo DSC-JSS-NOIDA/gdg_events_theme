@@ -1,6 +1,11 @@
 <div class="container">
-<?php query_posts('category_name=upcoming-events&showposts=1');
-      get_template_part('templates/event-form'); 
+     
+     <?php
+       if(in_category( 'Upcoming_Events' ))
+       {
+        get_template_part('/templates/reg-form');
+       } 
+       
       ?>
 
 

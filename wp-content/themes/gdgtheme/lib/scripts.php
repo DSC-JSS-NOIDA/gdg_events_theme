@@ -44,3 +44,7 @@ function dw_timeline_scripts() {
   ) );
 }
 add_action('wp_enqueue_scripts', 'dw_timeline_scripts', 100);
+  
+register_nav_menus( array(
+  'primary' => __( 'Primary Menu', 'gdg' ),
+) );
