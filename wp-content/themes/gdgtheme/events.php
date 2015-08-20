@@ -3,33 +3,40 @@
 Template Name: Events
 */
 ?>
-<?php get_template_part('templates/header'); ?>
-<h1>Hello EVENTS!!</h1>
-<div id="services" class="services">
-        <div class="container">
-          <div class="service-head text-center">
-            <h2>Upcoming Events</h2>
-            <span> </span>
-          </div>  
-            <div class="tm-head-grids">
-             <?php query_posts('category_name=upcoming-events&showposts=10');
-            if (have_posts()) : while (have_posts()) : the_post(); ?>
-              <a href="<?php the_permalink(); ?>"><div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
-                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="">
-                <h4><?php the_title(); ?></h4>
-                <h5><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></h5>
-              </div> </a>
-               <?php endwhile; ?>
-                <?php else : ?>
-                  <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                    <h1>Not Found</h1>
-                  </div>
-                <?php endif; ?>
-            </div>
-            
-            <div class="clearfix"> </div>
-          </div>
+<div class="container">
+</span>
+      <div class="about-head">
+          <h1>UPCOMING EVENTS</h1>
+          <span> </span>
         </div>
+      <div class="gallery-grids">
+      <section>
+        <ul id="da-thumbs" class="da-thumbs">
+          <?php query_posts('category_name=upcoming-events&showposts=10');
+            if (have_posts()) : while (have_posts()) : the_post(); ?>
+          <li>
+            <a href="<?php the_permalink(); ?>" class="b-animate-go  thickbox">
+              <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" class="img-responsive"  alt="" />
+              <div>
+                <h5 class="blog_desc"><?php the_title(); ?></h5>
+                <span class="blog_desc"><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></span>
+              </div>
+            </a>
+          </li> 
+           <?php endwhile; ?>
+              <?php else : ?>
+                <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                    <h1>Not Found</h1>
+                </div>
+              <?php endif; ?>        
+        </ul>
+        <div class="clearfix"> </div>
+      </section>
+      </div>
+  </div>
+
+
+
 
 
 

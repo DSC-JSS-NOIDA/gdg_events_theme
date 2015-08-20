@@ -109,3 +109,28 @@ function dw_timeline_prepare_posts($query){
   }
 }
 add_action( 'pre_get_posts', 'dw_timeline_prepare_posts' );
+
+//Adding Sidebars
+function quickchic_widgets_init() {
+register_sidebar(array(
+'name' => __( 'breadcrumbs', 'quickchic' ),
+'id' => 'sidebar-1',
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '<h4>',
+'after_title' => '</h4>',
+));
+}
+add_action( 'init', 'quickchic_widgets_init' );
+
+function registration_init() {
+register_sidebar(array(
+'name' => __( 'Registration', 'quickchic' ),
+'id' => 'sidebar-2',
+'before_widget' => '',
+'after_widget' => '',
+'before_title' => '<h4>',
+'after_title' => '</h4>',
+));
+}
+add_action( 'init', 'registration_init' );

@@ -5,6 +5,7 @@
 function dw_timeline_scripts() {
   wp_enqueue_style('dw_timeline_main', get_template_directory_uri() . '/assets/css/main.css', false, '6c39f42987ae297a5a21e2bb35bf3402');
   wp_enqueue_style('custom_css', get_template_directory_uri() . '/gdg_assets/css/style.css', false, '6c39f42987ae297a5a21e2bb35bf3402');
+  wp_enqueue_style('loading_css', get_template_directory_uri() . '/gdg_assets/css/loading.css', false, '6c39f42987ae297a5a21e2bb35bf3402');
   wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/gdg_assets/css/bootstrap.css', false, '6c39f42987ae297a5a21e2bb35bf3402');
    wp_enqueue_style('animate_css', get_template_directory_uri() . '/gdg_assets/css/animate.css', false, '6c39f42987ae297a5a21e2bb35bf3402');
 
@@ -16,7 +17,7 @@ function dw_timeline_scripts() {
   }
 
   wp_enqueue_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.7.0.min.js', false, null, false);
-  wp_enqueue_script('jquery', get_template_directory_uri() . '/gdg_assets/js/jquery.min.js', false, null, false);
+  wp_enqueue_script('jquery-jquery', get_template_directory_uri() . '/gdg_assets/js/jquery.min.js', false, null, false);
   wp_enqueue_script('nivo_lightbox', get_template_directory_uri() . '/assets/js/vendor/nivo-lightbox.min.js', false, null, false);
   wp_enqueue_script('infinitescroll', get_template_directory_uri() . '/assets/js/vendor/jquery.infinitescroll.min.js', false, '', true);
   wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap-3.0.3.min.js', false, '', true);
@@ -30,6 +31,8 @@ function dw_timeline_scripts() {
  wp_enqueue_script( 'jquery-hoverdir', get_template_directory_uri() . '/gdg_assets/js/jquery.hoverdir.js',false, '', true);
  wp_enqueue_script( 'jquery-modernizr', get_template_directory_uri() . '/gdg_assets/js/modernizr.custom.97074.js', false, '', true );
  wp_enqueue_script( 'js-init', get_template_directory_uri() . '/gdg_assets/js/init.js', false, '', true );
+ wp_enqueue_script( 'truncate', get_template_directory_uri() . '/gdg_assets/js/truncate.min.js', false, '', true );
+
   
   
   //
@@ -48,3 +51,4 @@ add_action('wp_enqueue_scripts', 'dw_timeline_scripts', 100);
 register_nav_menus( array(
   'primary' => __( 'Primary Menu', 'gdg' ),
 ) );
+

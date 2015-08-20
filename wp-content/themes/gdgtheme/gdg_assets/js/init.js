@@ -1,4 +1,17 @@
-new WOW().init();
+/*loading*/
+
+        $(window).load(function() {
+             $('body').addClass('loaded');
+        });
+/*--loading--*/
+ new WOW().init();
+/*Event Gallery*/
+$(function() {
+      
+        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+      });
+/*--Event Gallery--*/
 $(document).ready(function($) {
         $(".scroll").click(function(event){   
           event.preventDefault();
@@ -21,15 +34,19 @@ $(function() {
               }
           });
       });
-
-$(function() {
-      $('.gallery a').Chocolat();
+/*dev blog*/
+$(function(){
+        $('.blog_desc').succinct({
+            size: 120
+        });
+        $('.blog_heading').succinct({
+            size: 20
+        });
     });
 
- 
-
- $(function() {
-      
-        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
-
-      });
+var cw = $('.da-thumbs img').width();
+$('.da-thumbs img').css({'height':cw+'px'});
+var aw = $('.blog_row img').width();
+$('.blog_row img').css({'height':aw+'px'});
+var aw = $('.index_row img').width();
+$('.index_row img').css({'height':aw+'px'});
