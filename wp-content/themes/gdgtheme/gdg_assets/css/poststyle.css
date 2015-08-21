@@ -1,0 +1,37 @@
+
+.about-head h3
+{
+	text-align: center;
+}
+.event-details{
+  background-color: #f0f0f0;
+}
+.registration_field
+{
+}
+
+.view_btn{
+	color: white;
+	font-weight: 900;
+ background-color: #248FB2 !important;
+ border: 2px solid #0A2933 !important;
+ box-shadow: 5px 5px 5px #70DBFF !important;
+} 
+
+.post-page
+{
+	color: white !important;
+}
+.ninja-forms-all-fields-wrap
+{
+	background-color: #EBF5FF;
+	padding:10px;
+}
+.content {
+	background-color: #F0F0F0;
+}
+.upevent_post_field{
+	border: 2px solid #008FB2;
+	padding: 15px;
+	background-color: #E6F5F5;
+}

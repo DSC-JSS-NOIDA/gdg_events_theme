@@ -37,7 +37,7 @@ $(function() {
 /*dev blog*/
 $(function(){
         $('.blog_desc').succinct({
-            size: 120
+            size: 100
         });
         $('.blog_heading').succinct({
             size: 20
@@ -50,3 +50,4 @@ var aw = $('.blog_row img').width();
 $('.blog_row img').css({'height':aw+'px'});
 var aw = $('.index_row img').width();
 $('.index_row img').css({'height':aw+'px'});
+$('input').addClass("form-control");

@@ -84,7 +84,7 @@
            </div>
       </div>
 <div class="clearfix"> </div>
-         
+      
 <div class="about-head">
     <h1>Some Moments...</h1>
       <span> </span>

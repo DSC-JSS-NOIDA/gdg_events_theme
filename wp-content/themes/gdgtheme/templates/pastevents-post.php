@@ -1,4 +1,8 @@
 <h1>This is past events</h1>
+
+
+
+
 <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <header>
