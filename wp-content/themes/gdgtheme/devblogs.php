@@ -14,11 +14,11 @@ Template Name: Dev Blogs
              if (have_posts()) : while (have_posts()) : the_post(); ?>
 		    	<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 blog-pannel" style="padding:5px;">
 		    		<div style="background-color:white;">
-		    		<a href="<?php the_permalink(); ?>" class="mask"><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" class="img-responsive img-thumbnail zoom-img" style="width:100%;"></a>
+		    		<a class="mask"><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" class="img-responsive img-thumbnail zoom-img" style="width:100%;"></a>
 		    		<div style="padding:5px;" >
 		    		   <h3 class="blog_heading" style="text-align:center !important;"><?php the_title(); ?></h3>
 		    		   <div class="blog_desc"><p style="text-align:center !important;padding:2px;"><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></p></div>
-		    		   <a href="<?php the_permalink(); ?>"><button>Show More</button></a>
+		    		   <!-- <a><button>Show More</button></a> -->
 		    		</div>
 		    		</div>
 		    	</div>
