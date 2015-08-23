@@ -3,11 +3,9 @@
 Template Name: Dev Blogs
 */
 ?>
-<div style="background:url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/blog-back.png) no-repeat fixed;background-size: 100% 100%;">
-
-	<div class="about-head">
+<div style="background:url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/blog-back.png) no-repeat fixed;background-size: 100% 100%;padding-top:0px !important;">
+	<div class="blog_page_title about-head">
           <h1>Blogs</h1>
-
           <span> </span>
     </div>
     <div class="clearfix"> </div> 
@@ -28,7 +26,6 @@ Template Name: Dev Blogs
               <header class="entry-header">
                 <div class="post-meta">
                   <span class="the-category"> 
-                    <a href="#">Print Design,</a> <a href="#">Photoshop</a>
                   </span>
                 </div>
                 <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel=""><?php the_title(); ?></a></h2>
@@ -37,22 +34,17 @@ Template Name: Dev Blogs
                   <ul class="list-inline">
                     <li>
                       <span class="the-author">
-                        <a href="#">Admin</a> 
+                        <a ><?php echo the_author_link(); ?></a> 
                       </span>
                     </li>
                     <li>
                       <span class="the-time">
-                        <a href="#">06 Jan 2015</a>
-                      </span>
-                    </li>
-                    <li>
-                      <span class="the-share">
-                        <a href="#" title="share">30</a>
+                        <a ><?php echo get_the_date(); ?></a>
                       </span>
                     </li>
                     <li>
                       <span class="the-comments">
-                        <a href="#" title="">05</a>
+                        <a href="<?php comments_link(); ?>" title="comments"><?php echo get_comments_number(); ?> </a>
                       </span>
                     </li>
                   </ul>
@@ -69,10 +61,10 @@ Template Name: Dev Blogs
                 <?php endif; ?>
 
         </div><!-- /.row -->
-        <div class="blog-more text-center">
+        <!-- <div class="blog-more text-center">
           <a href="#" class="btn btn-primary">View More</a>
         </div>
-        
+         -->
       </div><!-- /.container -->
     </section><!-- End Blog Section -->
     <!-- blog test ends -->

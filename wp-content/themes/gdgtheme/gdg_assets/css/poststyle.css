@@ -57,6 +57,14 @@
 /*Upcoming Events*/
 
 /*blogs*/
+.blog_page_title h1{
+ padding-top: 20px !important;
+ 
+ margin: 0px !important;
+}
+.blog_page_title{
+	padding-bottom: 10px !important;
+}
 .dev_blog_details{
  text-align: justify;
 }
