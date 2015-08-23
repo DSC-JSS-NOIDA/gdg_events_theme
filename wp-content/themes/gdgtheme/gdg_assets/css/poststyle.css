@@ -36,27 +36,16 @@
 {
 	color: white !important;
 }
-.ninja-forms-all-fields-wrap
-{
-	background-color: #EBF5FF;
-	padding:10px;
-	border: 2px inset red;
-}
-.ninja-forms-form-title{
-  text-align: center;
-  border: 2px groove green;
-}
 .content {
 	background-color: #F0F0F0;
 }
-.upevent_post_field{
-	border: 2px solid #008FB2;
-	padding: 15px;
-	background-color: #E6F5F5;
-}
+
 /*Upcoming Events*/
 
 /*blogs*/
+.blog_post_body{
+  background-color:white;
+}
 .blog_page_title h1{
  padding-top: 20px !important;
  
@@ -70,10 +59,89 @@
 }
 .author_details{
   text-align: center;
+  display: inline-block;
+  border: 2px solid #0F3D4C;
+  background-color:#B2D1E0;
 }
 .author_details h5{
-  text-align: center;
+  text-align: justify;
 }
 .author_image img{
-	width: 30%;
+	width: 40%;
 }
+.author_image p{
+	width: 70%;
+	font-weight: 900;
+}
+
+#comments{
+	border-top: 4px solid #006699;
+	background-color: white; 
+}
+#comments .comment{
+	border-top: 2px solid orange ; 
+}
+#comments .comment .children{
+	border-top: 1px solid green ; 
+}
+
+.event_calendar h4 {
+	text-align: center;
+}
+.event_calendar ul {
+	list-style-type: none;
+	text-align: left;
+}
+
+.blog_post_container
+{
+	width:90%;
+}
+
+/*Event Post Page*/
+.upcoming_events_post{
+	background-color: white;
+}
+.upevent_post_field .qem-icon
+{
+  display: none;
+}
+
+.custom_event_work{
+	
+	
+}
+.custom_event_work h4{
+	text-align: center;
+	color: #003D66;
+}
+.custom_event_work p{
+	font-size: 14px !important;
+	font-weight: 900;
+	color: #E65C00 !important;
+}
+span.glyphicon {
+    font-size: 20px;  
+}
+@media screen and (min-width: 480px) {
+
+	
+   .qem-small{
+
+	padding: 20px;
+}
+.custom_event_work{
+	
+	margin-right: 20px;
+	margin-left: 20px;
+}
+}
+@media screen and (max-width: 480px) {
+ .upcoming_events_post{
+     width: 100% !important;
+	}
+}
+
+
+
+/*Event Post page Ends*/

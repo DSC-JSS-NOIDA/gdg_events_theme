@@ -123,9 +123,9 @@ register_sidebar(array(
 }
 add_action( 'init', 'quickchic_widgets_init' );
 
-function registration_init() {
+function category_init() {
 register_sidebar(array(
-'name' => __( 'Registration', 'quickchic' ),
+'name' => __( 'category', 'quickchic' ),
 'id' => 'sidebar-2',
 'before_widget' => '',
 'after_widget' => '',
@@ -133,4 +133,4 @@ register_sidebar(array(
 'after_title' => '</h4>',
 ));
 }
-add_action( 'init', 'registration_init' );
+add_action( 'init', 'category_init' );

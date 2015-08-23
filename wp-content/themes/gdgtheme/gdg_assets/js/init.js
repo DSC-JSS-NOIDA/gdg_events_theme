@@ -51,3 +51,20 @@ $('.blog_row img').css({'height':aw+'px'});
 var aw = $('.index_row img').width();
 $('.index_row img').css({'height':aw+'px'});
 $('input').addClass("form-control");
+
+$('.author_image img').addClass("img-circle");
+
+/*Event Display page*/
+$( ".qem .qem-icon:nth-child(1)" ).remove();
+$( ".qem-small .start" ).appendTo( ".custom_event_time" );
+$( ".qem-small .location" ).appendTo( ".custom_event_venue" );
+$( ".qem-small .address" ).appendTo( ".custom_event_address" );
+$( ".qem-small .organisation" ).appendTo( ".custom_event_organisation" );
+$(".c_month").html($( ".qem-calendar-small .nonday .month" ).text());
+$(".c_day").html($( ".qem-calendar-small .day" ).text());
+$(".c_year").html($( ".qem-calendar-small .nonday" ).clone().children().remove().end().text());
+$( ".qem-small p" ).appendTo( ".event_post_desc" );
+$( ".qem-small .qem-register" ).appendTo( ".event_post_register" );
+$( ".qem-small .qemright" ).appendTo( ".event_post_eventpic" );
+$(".qem-register input").addClass("form-control");
+$(".qem-register h2").replaceWith("<h4>Register for this event</h4>");

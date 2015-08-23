@@ -33,9 +33,6 @@ window.scrollTo(0,1); } </script>
               <a href="#" id="pull"><img src="<?php print(get_template_directory_uri()); ?>/gdg_assets/images/menu-icon.png" title="menu" /></a>
             </nav>
             <div class="clearfix"> </div>
-            <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
-			  <?php dynamic_sidebar( 'sidebar-1' ); ?>
-			  <?php endif; ?>
           </div>
         </div>
       </div>

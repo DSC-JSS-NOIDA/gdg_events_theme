@@ -8,15 +8,23 @@ Template Name:Developers
 		<div class="container">
 			   <div class="team-main">
 					<div class="about-head">
-			          <h1>TEAM</h1>
+			          <h1>OUR TEAM</h1>
 			          <span> </span>
 			        </div>
 						<ul class="ch-grid">
 					<li>
 						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/supr.jpg);">
 							<div class="ch-info">
+								<h3>Seema Shukla</h3>
+								<p>Mentor</p>
+							</div>
+						</div></a>
+					</li>
+					<li>
+						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/supr.jpg);">
+							<div class="ch-info">
 								<h3>Supratim</h3>
-								<p></p>
+								<p>Co-Founder</p>
 							</div>
 						</div></a>
 					</li>
@@ -24,7 +32,7 @@ Template Name:Developers
 						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/ram.jpg);">
 							<div class="ch-info">
 								<h3>Ram</h3>
-								<p></p>
+								<p>Co-Founder</p>
 							</div>
 						</div></a>
 					</li>
@@ -61,7 +69,7 @@ Template Name:Developers
 						</div></a>
 					</li>
 					<li>
-						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/pankhuri.png);">
+						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/pankhuri.jpg);">
 							<div class="ch-info">
 								<h3>Pankhuri</h3>
 								<p> </p>
