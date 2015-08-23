@@ -2016,3 +2016,142 @@ a.mask {
 	-o-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+
+/*blog section*/
+/* === Blog Section === */
+.latest-blog-section {
+  
+}
+.blog-post-wrapper {
+    padding: 4px;
+    border: 1px solid #eee;
+    border-bottom: 3px double #eee;
+}
+
+.figure {
+    position: relative;
+}
+.figure i{
+    position: absolute;
+    bottom: -8px;
+    right: 30px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 100;
+}
+.figure i:after {
+    position: absolute;
+    content: "";
+    left: -12px;
+    top: -10px;
+    width: 40px;
+    height: 40px;
+    background-color: #68c3a3;
+    z-index: -1;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.post-thumbnail {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.post-thumbnail img{
+    opacity: 0.8;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.post-thumbnail img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.entry-header {
+    padding: 0 12px;
+}
+.post-meta {
+
+}
+.the-category a {
+    font-size: 12px;
+    line-height: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.entry-title {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 700;
+}
+.entry-title a{
+    color: #282828;
+}
+.entry-title a:hover{
+    color: #68c3a3;
+}
+.entry-meta {
+    color: #afafaf;
+}
+.entry-meta ul {
+    margin-bottom: 10px;
+}
+.entry-meta ul li {
+    padding: 0 10px;
+}
+.entry-meta ul li a{
+    display: inline-block;
+    color: #BBBBBB;
+    font-weight: 400;
+}
+.entry-meta ul li a:hover{
+    color: #68c3a3;
+}
+
+.blog-more {
+    margin-top: 40px;
+}
+
+/*
+Icon for all respective meta
+====================================== */
+.the-author::before{
+    content: "\f044";
+}
+.the-time::before{
+    content: "\f133";
+}
+.the-share::before{
+    content: "\f1e0";
+}
+.the-comments::before{
+    content: "\f0e6";
+}
+
+.the-author,
+.the-time,
+.the-share, 
+.the-comments {
+    position: relative;
+    padding-left: 20px;
+}
+
+.the-author::before,
+.the-time::before,
+.the-share::before,
+.the-comments::before{
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+}
+/*blog section ends*/
