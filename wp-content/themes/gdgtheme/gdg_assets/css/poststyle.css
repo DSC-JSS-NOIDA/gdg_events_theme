@@ -101,15 +101,11 @@
 /*Event Post Page*/
 .upcoming_events_post{
 	background-color: white;
+	width: 99%;
 }
 .upevent_post_field .qem-icon
 {
   display: none;
-}
-
-.custom_event_work{
-	
-	
 }
 .custom_event_work h4{
 	text-align: center;
@@ -123,6 +119,12 @@
 span.glyphicon {
     font-size: 20px;  
 }
+
+.event_post_eventpic .qemright a img
+{
+ width: 100%;
+ height: auto;
+}
 @media screen and (min-width: 480px) {
 
 	
@@ -135,13 +137,19 @@ span.glyphicon {
 	margin-right: 20px;
 	margin-left: 20px;
 }
+.upevent_post_field
+{
+ padding-right: 50px;
+}
 }
 @media screen and (max-width: 480px) {
  .upcoming_events_post{
      width: 100% !important;
 	}
 }
-
+.event_post_desc{
+text-align: justify;
+}
 
 
 /*Event Post page Ends*/

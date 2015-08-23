@@ -32,7 +32,7 @@
                    <h4>Address</h4>
                    <p class="custom_event_address"></p>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                <div class="col-sm-12 ">
                   <span class="glyphicon glyphicon-user"></span>
                    <h4>Speaker</h4>
                    <p class="custom_event_organisation"></p>
@@ -47,8 +47,8 @@
           <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
               <div class="event_post_register"></div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-              <div class="event_post_eventpic"></div>
+          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" >
+              <div class="event_post_eventpic" align="center"></div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
           <div class="" >
