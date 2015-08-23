@@ -18,11 +18,11 @@ Template Name: Events
                 <div class="portfolio-group">
                   <div class="portfolio-item">
                     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="image 1">
-                    <div class="detail">
-                       <div class=".blog_heading"><h4><b><?php the_title(); ?></b></h4></div>
-                       <div><?php echo get_the_date();?></div>
-                      <div class="blog_desc"><p><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></p></div>   
-                      <a href="<?php the_permalink();?>" align="center"><span class="btn view_btn" >View</span></a>
+                    <div class="detail event_list_detail">
+                       <div class="blog_heading"><h4><b><?php the_title(); ?></b></h4></div>
+                       <div class="event_list_date"><?php echo get_the_date();?></div>
+                      <div class="blog_desc"><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></div>   
+                      <a href="<?php the_permalink();?>" align="center"><div><span class="btn view_btn" >View</span></div></a>
                     </div>
                     </div>
                          
@@ -50,11 +50,11 @@ Template Name: Events
                 <div class="portfolio-group">
                   <div class="portfolio-item">
                     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>" alt="image 1">
-                    <div class="detail">
-                       <div class=".blog_heading"><h4><b><?php the_title(); ?></b></h4></div>
-                       <div><?php echo get_the_date();?></div>
-                      <div class="blog_desc"><p><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></p></div>
-                      <a href="<?php the_permalink();?>"><span class="btn view_btn">View</span></a>
+                    <div class="detail event_list_detail">
+                       <div class="blog_heading"><h4><b><?php the_title(); ?></b></h4></div>
+                       <div class="event_list_date"><?php echo get_the_date();?></div>
+                      <div class="blog_desc"><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></div>
+                      <a href="<?php the_permalink();?>" align="center"><div><span class="btn view_btn">View</span></div></a>
                     </div>
                   </div>        
                 </div>

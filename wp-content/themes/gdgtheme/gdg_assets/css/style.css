@@ -70,7 +70,7 @@ body a{
 }
 .top-nav ul li.active a,
 .top-nav ul li a:hover{
-	color:#EE2F1B;
+	color:#4D70B8;
 }
 .logo a{
 	display:block;
@@ -107,7 +107,8 @@ nav a {
 }
 nav a:hover{
 	text-decoration:none;
-	color:#00A2C1;
+	color:white;
+	background-color:#001F33 !important;
 }
 nav a#pull {
 	display: none;

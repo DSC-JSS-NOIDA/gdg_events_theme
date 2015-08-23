@@ -7,6 +7,7 @@ Template Name: Dev Blogs
 <div class="container">
 	<div class="about-head">
           <h1>Blogs</h1>
+
           <span> </span>
     </div>
     <div class="blog_row row">
@@ -18,7 +19,7 @@ Template Name: Dev Blogs
 		    		<div style="padding:5px;" >
 		    		   <h3 class="blog_heading" style="text-align:center !important;"><?php the_title(); ?></h3>
 		    		   <div class="blog_desc"><p style="text-align:center !important;padding:2px;"><?php the_content( __('Continue Reading &rarr;', 'dw-timeline') ); ?></p></div>
-		    		   <!-- <a><button>Show More</button></a> -->
+		    		   <a href="<?php the_permalink(); ?>"><button>Show More</button></a>
 		    		</div>
 		    		</div>
 		    	</div>

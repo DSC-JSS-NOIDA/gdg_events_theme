@@ -1,14 +1,28 @@
-
+/*Upcoming events*/
 .about-head h3
 {
 	text-align: center;
 }
-.event-details{
-  background-color: #f0f0f0;
+
+ .event_list_detail
+ {
+ 	 background-color: #EBF5EB !important;
+ }
+.event_list_detail p{
+  text-align: center !important;
+
 }
-.registration_field
-{
+.event_list_date{
+	text-align: center;
+	color:#1A4C1A;
+	margin-left: 25px;
+	margin-right: 25px;
+	border:2px solid #1A4C1A;
 }
+ .blog_heading h4{
+ 	text-align: center !important;
+ }
+
 
 .view_btn{
 	color: white;
@@ -26,6 +40,11 @@
 {
 	background-color: #EBF5FF;
 	padding:10px;
+	border: 2px inset red;
+}
+.ninja-forms-form-title{
+  text-align: center;
+  border: 2px groove green;
 }
 .content {
 	background-color: #F0F0F0;
@@ -34,4 +53,19 @@
 	border: 2px solid #008FB2;
 	padding: 15px;
 	background-color: #E6F5F5;
+}
+/*Upcoming Events*/
+
+/*blogs*/
+.dev_blog_details{
+ text-align: justify;
+}
+.author_details{
+  text-align: center;
+}
+.author_details h5{
+  text-align: center;
+}
+.author_image img{
+	width: 30%;
 }

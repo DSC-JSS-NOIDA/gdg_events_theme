@@ -40,7 +40,7 @@ $(function(){
             size: 100
         });
         $('.blog_heading').succinct({
-            size: 20
+            size: 50
         });
     });
 

@@ -13,17 +13,17 @@ Template Name:Developers
 			        </div>
 						<ul class="ch-grid">
 					<li>
-						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/ram.jpg);">
+						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/supr.jpg);">
 							<div class="ch-info">
-								<h3>Ram</h3>
+								<h3>Supratim</h3>
 								<p></p>
 							</div>
 						</div></a>
 					</li>
 					<li>
-						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/supr.jpg);">
+						<a href="#"><div class="ch-item" style="background-image: url(<?php print(get_template_directory_uri()); ?>/gdg_assets/images/team/ram.jpg);">
 							<div class="ch-info">
-								<h3>Supratim</h3>
+								<h3>Ram</h3>
 								<p></p>
 							</div>
 						</div></a>
