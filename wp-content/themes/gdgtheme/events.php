@@ -3,9 +3,7 @@
 Template Name: Events
 */
 ?>
-<div class="container">
-      <div class="gallery-grids">
-      <div class="container">
+<div class="container" align="center">
         <div class="content-container">
                 <div class="about-head">
                   <h1>UPCOMING EVENTS</h1>
@@ -65,8 +63,7 @@ Template Name: Events
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      
   </div>
 
 
