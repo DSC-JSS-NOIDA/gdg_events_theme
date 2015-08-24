@@ -15,8 +15,8 @@ window.scrollTo(0,1); } </script>
             <div class="logo">
               <img src="<?php print(get_template_directory_uri()); ?>/gdg_assets/images/logo.png" title="jss" height=30 width=150 />
             </div>
-             <nav class="top-nav"><br>
-              <ul class="top-nav">
+             <nav class="top-nav">
+              <ul>
                 <?php
           get_template_part('lib/wp_bootstrap_navwalker');
               wp_nav_menu( array(
@@ -37,3 +37,4 @@ window.scrollTo(0,1); } </script>
         </div>
       </div>
 
+     

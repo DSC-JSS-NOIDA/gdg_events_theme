@@ -26,6 +26,7 @@ function dw_timeline_scripts() {
   
   //custom js for gdg static page
   wp_enqueue_script('gdg_easing', get_template_directory_uri() . '/gdg_assets/js/easing.js', false, '', true);
+  wp_enqueue_script('boot_min', get_template_directory_uri() . '/gdg_assets/js/bootstrap.min.js', false, '', true);
   wp_enqueue_script('gdg_move_top', get_template_directory_uri() . '/gdg_assets/js/move-top.js', false, '', true);
  wp_enqueue_script( 'wow-js', get_template_directory_uri() . '/gdg_assets/js/wow.min.js', array(),null, false );
  wp_enqueue_script( 'jquery-chocolat', get_template_directory_uri() . '/gdg_assets/js/jquery.chocolat.js', false, '', true);

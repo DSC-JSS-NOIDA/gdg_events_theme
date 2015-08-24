@@ -40,31 +40,18 @@
              </div>
         <?php the_content(); ?>
          </div>
-         <div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
               <h4><b>Event Description</b></h4>
               <div class="event_post_desc"></div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
               <div class="event_post_register"></div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12" >
-              <div class="event_post_eventpic" align="center"></div>
+
+           <div class="col-lg-8 col-md-8 col-sm-6 col-xs-12" >
+              <h4><b>Featured</b></h4>
+              <div class="event_post_eventpic" align="left"></div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-          <div class="" >
-                <header>
-                  <div class="about-head">
-                     <h4 style="text-align:center;"><b>Posted By:</b></h4>
-                     <span> </span>
-                  </div> 
-                </header>
-              <div class="author_image" align="center">
-              <?php if(is_single()) echo get_avatar( get_the_author_meta( 'ID' ), 32 ); ?>
-              <p><?php the_author_link(); ?> </p>
-              <hr >
-              <p><?php the_author_description(); ?> </p>
-              </div>
-           </div> </div>
       </div>
     </div>
 </article>
