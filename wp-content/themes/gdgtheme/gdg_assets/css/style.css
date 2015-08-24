@@ -32,7 +32,7 @@ body a{
 }
 .navbar-nav > li > a:hover,.navbar-nav > li > a:focus {
       color: #297ACC;
-      background:#001F33;
+      background:#001F33 !important;
  }
 .navbar-nav > .active{
     color: #297ACC;
