@@ -7,7 +7,7 @@
 window.scrollTo(0,1); } </script>
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/gdg_assets/arrow.png" />
   </head>
   <body>    
       <div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
