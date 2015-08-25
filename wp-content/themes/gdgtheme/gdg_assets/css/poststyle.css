@@ -123,6 +123,7 @@ span.glyphicon {
 	
 .qem-small{
 	padding: 20px;
+	margin-left: 0px !important;
 }
 
 .upevent_post_field
@@ -150,6 +151,10 @@ text-align: justify;
 .qemright{
 	float: left !important;
 }
+.qem-small{
+	margin-left: 0px !important;
+}
+
 .qem-register h4 {
 	text-align: center;
 	color:#001F4C;
