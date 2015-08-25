@@ -5,7 +5,7 @@
       <div class="loader-section section-left"></div>
       <div class="loader-section section-right"></div>
 
-    </div>
+</div>
 <!--loading page-->
 
     <div class="bg">
@@ -141,9 +141,9 @@
            <?php endwhile; ?>
                 <?php else : ?>
                   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                    <h1>Not Found</h1>
+                    <p class="error_message">Hey, Wait!! Eat, Code and Check Again after sometime. We are working on it.</p>
                   </div>
-                <?php endif; ?>
+          <?php endif; ?>
 
     </div>
     <div class="clearfix"> </div> 

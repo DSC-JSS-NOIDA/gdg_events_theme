@@ -6,7 +6,7 @@ Template Name: Events
 <div class="container" align="center">
         <div class="content-container">
                 <div class="about-head">
-                  <h1>UPCOMING EVENTS</h1>
+                  <h2>UPCOMING EVENTS</h2>
                   <span> </span>
                 </div>
             <div id="portfolio-content" class="center-text">
@@ -27,7 +27,7 @@ Template Name: Events
                 <?php endwhile; ?>
                   <?php else : ?>
                     <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                      <h1>Not Found</h1>
+                      <p class="error_message">Hey, Wait!! Eat, Code and Check Again after sometime. We are working on it.</p>
                     </div>
                   <?php endif; ?>
               </div>
@@ -37,7 +37,7 @@ Template Name: Events
 
         <div class="content-container">
                 <div class="about-head">
-                  <h1>Past Events</h1>
+                  <h2>Past Events</h2>
                   <span> </span>
                 </div>
             <div id="portfolio-content" class="center-text">
@@ -57,7 +57,7 @@ Template Name: Events
                 <?php endwhile; ?>
                   <?php else : ?>
                     <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                      <h1>Not Found</h1>
+                      <p class="error_message">Hey, Wait!! Eat, Code and Check Again after sometime. We are working on it.</p>
                     </div>
                   <?php endif; ?>
               </div>

@@ -56,7 +56,7 @@ Template Name: Dev Blogs
                <?php endwhile; ?>
                 <?php else : ?>
                   <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                    <h1>Not Found</h1>
+                    <p class="error_message">Hey, Wait!! Eat, Code and Check Again after sometime. We are working on it.</p>
                   </div>
                 <?php endif; ?>
 

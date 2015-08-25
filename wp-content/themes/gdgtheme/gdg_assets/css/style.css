@@ -311,11 +311,19 @@ nav a#pull {
 	color: #222222;
 	text-transform: uppercase;
 }
+.about-head h2{
+	text-align: center;
+	font-weight: 900;
+	color: #222222;
+	text-transform: uppercase;
+}
 .about-head span{
 	width: 8%;
 	height: 1px;
 	background: #35C2F8;
 	display: inline-block;
+	margin-top:0px !important;
+	padding-top: 0px !important;
 }
 
 

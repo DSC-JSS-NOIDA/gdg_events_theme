@@ -163,6 +163,12 @@ text-align: justify;
 	background-color: #001F4C;
 	padding: 3px;
 }
-
+.error_message {
+	display: block;
+	font-weight: 900;
+	text-align: center;
+	color:white !important;
+	background-color: #001F4C !important;
+}
 
 /*Event Post page Ends*/
