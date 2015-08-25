@@ -175,5 +175,15 @@ text-align: justify;
 	color:white !important;
 	background-color: #001F4C !important;
 }
+.closed_message{
+	padding: 10px !important;
+	width:400px;
+	font-size:18px;
+    display: block;
+	font-weight: 900;
+	text-align: center;
+	color:white !important;
+	background-color:#FF8533;
+}
 
 /*Event Post page Ends*/

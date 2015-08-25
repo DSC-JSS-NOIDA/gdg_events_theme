@@ -1,5 +1,7 @@
 
 <div class="container upcoming_events_post">
+   <div align="center"><p class="closed_message">Ohh!! This event has passed, But No worry we have somethings for you just read this page.</p>
+   </div>
  <?php while (have_posts()) : the_post(); ?>
   <article <?php post_class(); ?>>
     <header>

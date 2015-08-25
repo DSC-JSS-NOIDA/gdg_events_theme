@@ -9,6 +9,13 @@
         </div>
     </header>
     <div class="container upevent_post_field">
+     <?php
+             $key = 'Event Description';
+             $themeta = get_post_meta($post->ID, $key, TRUE);
+             if($themeta != '') {
+             echo 'han hain';
+              }
+              ?>
         <div class="row">
          <div class="col-sm-12 col-xs-12"> 
              <div class="row custom_event_work" align="center">
