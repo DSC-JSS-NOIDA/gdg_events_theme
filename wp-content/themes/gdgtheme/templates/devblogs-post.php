@@ -30,11 +30,6 @@
               <hr style="background-color:">
               <p><?php the_author_description(); ?> </p>
               </div>
-              <div class="event_calendar">
-                  <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-                  <?php dynamic_sidebar( 'sidebar-2' ); ?>
-                  <?php endif; ?>
-              </div>
            </div>
         </div>
 

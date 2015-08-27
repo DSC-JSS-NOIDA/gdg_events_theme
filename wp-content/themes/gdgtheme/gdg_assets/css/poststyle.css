@@ -187,3 +187,25 @@ text-align: justify;
 }
 
 /*Event Post page Ends*/
+/*Subscriber */
+.subscription_box{
+ background-color:#52A3CC;
+ opacity: 0.9;
+}
+.center_box_sub{
+max-width:300px;
+}
+.es_lablebox{
+ font-weight: 900;
+ color:#001F33;
+}
+.es_textbox_button
+{
+	background-color:#001F33;
+	color:white;
+}
+.center_box_sub p{
+	padding-top: 30px;
+ font-size: 20px;
+
+}
