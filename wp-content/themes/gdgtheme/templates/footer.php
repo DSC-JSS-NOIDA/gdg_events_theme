@@ -12,12 +12,18 @@
         </div>
       </div>
 </div>
-<div class="map">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5230794515874!2d77.3595036!3d28.614081000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce541dc34567f%3A0x4fd027cb23d66b19!2sJSS+Academy+Of+Technical+Education!5e0!3m2!1sen!2sus!4v1439941200258" frameborder="0" style="border:0" allowfullscreen></iframe>
-  <div class="map-mask">
-    
-  </div>
-</div>
+<script>
+      function showMap() {
+        var mapPos = document.getElementById('map');
+        var map = new google.maps.Map(mapPos, {
+          center: {lat: 28.6131, lng: 77.3595},
+          zoom: 16,
+	fullscreenControl:true,
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=showMap" async defer></script>
+<div id="map" style="width:100%;height:340px;"> </div>
 <!--map-end-->
     
    
